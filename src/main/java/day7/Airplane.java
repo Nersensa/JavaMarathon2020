@@ -1,14 +1,4 @@
-package day6;
-
-public class Task2 {
-    public static void main(String[] args) {
-        Airplane samalet = new Airplane("boing", 2005, 54, 12);
-        samalet.info();
-        samalet.fillup(50);
-        samalet.fillup(50);
-        samalet.info();
-    }
-}
+package day7;
 
 class Airplane {
     private String producer;
@@ -23,6 +13,14 @@ class Airplane {
         this.length = length;
         this.weight = weight;
         this.fuel = 0;
+    }
+
+    public static void compareAirplanes(Airplane airplane1, Airplane airplane2) {
+        if (airplane1.length > airplane2.length) {
+            System.out.println(airplane1.producer + " > " + airplane2.producer);
+        } else {
+            System.out.println(airplane1.producer + " < " + airplane2.producer);
+        }
     }
 
     void info() {
