@@ -11,14 +11,14 @@
 //
 //    @Test
 //    void sumDigits1() {
-//        File file = new File("src/test/resources/D14T1_1.txt");
+//        File file = new File("src/people.txt/resources/D14T1_1.txt");
 //        Task1.printSumDigits(file);
 //        Assertions.assertEquals(10 + System.lineSeparator(), getOutput(), "Файл содержит: 1 1 1 1 1 1 1 1 1 1");
 //    }
 //
 //    @Test
 //    void sumDigits2() {
-//        File file = new File("src/test/resources/D14T1_2.txt");
+//        File file = new File("src/people.txt/resources/D14T1_2.txt");
 //        Task1.printSumDigits(file);
 //        Assertions.assertEquals(-10 + System.lineSeparator(), getOutput(), "Файл содержит: -1 -1 -1 -1 -1 -1 -1 -1 -1 -1");
 //    }

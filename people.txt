@@ -1,0 +1,4 @@
+Ted 12
+Govard 34
+Nadiya 20
+Olia -23
