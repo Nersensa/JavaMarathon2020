@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class User {
-    private String username;    //имя пользователя
-    private List<User> subscriptions;   //подписки на других пользователей
+    private final String USERNAME;    //имя пользователя
+    private final List<User> subscriptions;   //подписки на других пользователей
 
-    public User(String username) {
-        this.username = username;
+    public User(final String USERNAME) {
+        this.USERNAME = USERNAME;
         this.subscriptions = new ArrayList<>();
     }
 
@@ -19,17 +19,11 @@ public class User {
     }
 
     public boolean isSubscribed(User user) {
-        if (subscriptions.contains(user)) {
-            return true;
-        }
-        return false;
+        return subscriptions.contains(user);
     }
 
     public boolean isFriend(User user) {
-        if (subscriptions.contains(user) && user.isSubscribed(this)) {
-            return true;
-        }
-        return false;
+        return subscriptions.contains(user) && user.isSubscribed(this);
     }
 
     public void sendMessage(User user, String text) {
@@ -37,11 +31,11 @@ public class User {
     }
 
     public String toString() {
-        return username;
+        return USERNAME;
     }
 
-    public String getUsername() {
-        return username;
+    public String getUSERNAME() {
+        return USERNAME;
     }
 
     public List<User> getSubscriptions() {
